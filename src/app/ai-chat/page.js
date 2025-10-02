@@ -8,7 +8,7 @@ export default function AIChatPage() {
   const router = useRouter();
 
   const handleGoBack = () => {
-    router.push('/');
+    router.push('/home');
   };
 
   return (
