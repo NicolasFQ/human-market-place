@@ -1,0 +1,144 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #00001A;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logoLink {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logoContainer {
+    width: 150px;
+    height: 40px;
+    position: relative;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.searchBar {
+    position: relative;
+    flex: 0 1 800px;
+    background: #2b2a64;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.searchBar input {
+    width: 100%;
+    padding: 12px 40px 12px 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+.searchBar input::placeholder {
+    color: #aaa;
+}
+
+/* 搜索按钮样式 */
+.searchBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40px;
+    border: none;
+    background: #1E2151;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.iconItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.authdiv{
+    display: flex;
+}
+
+.authButton {
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 5px 8px;
+    transition: color 0.3s; /* 明确过渡属性 */
+}
+
+.authButton:hover {
+    color: #00e1ff;
+}
+
+.cartIcon {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .searchBar {
+        flex: 0 1 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .searchBar {
+        display: none;
+    }
+    
+    .header {
+        padding: 15px 10px;
+    }
+    
+    .icons {
+        gap: 10px;
+    }
+    
+    .logoContainer {
+        width: 120px;
+    }
+}
+
+.cartCount {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #e63946;
+  color: white;
+  font-size: 0.7rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 0.5s ease;
+}

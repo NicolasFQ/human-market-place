@@ -1,0 +1,129 @@
+.productCard {
+  background: linear-gradient(to right, #1e1e58, #006f9e);
+  border-radius: 10px;
+  width: 280px;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 0 0 auto;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.vipProduct {
+  border: 3px solid transparent;
+  background: linear-gradient(to right, #1e1e58, #006f9e) padding-box, 
+              conic-gradient(#95f8f2 0deg,#14effa 90deg,#e8fdca 180deg,#feffdb 270deg,#b7fbef 360deg) border-box;              
+}
+
+.productCard:hover {
+  box-shadow: 0 10px 30px rgba(0, 225, 255, 0.1);
+}
+
+.cardContent {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.labelContainer {
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+
+.discountLabel {
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  background-color: var(--discount-color);
+  color: black;
+  padding: 3px 28px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  z-index: 2;
+  letter-spacing: 2px;
+}
+
+.vipWrapper {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.vipLabel {
+  font-family: "Press Start 2P", system-ui;
+  padding: 2px 8px 0px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  z-index: 2;
+  background: linear-gradient(to right, #35f2df 48%, #ffffff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.productName {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: white;
+  font-weight: 600;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: c;
+}
+
+.productImageContainer {
+  width: 100%;
+  height: 120px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.productImage {
+  object-fit: contain;
+}
+
+.productPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.buyButton {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+  transition: .3s;
+}
+
+.buyButton:hover {
+  scale: 1.2;
+}
+
+@media (max-width: 768px) {
+ .productCard {
+    width: 140px;
+  }
+  
+ .productName {
+    font-size: 0.9rem;
+    min-height: 36px;
+  }
+  
+ .productImageContainer {
+    height: 100px;
+  }
+}

@@ -1,0 +1,115 @@
+.container {
+  width: 100%;
+  padding: 20px 60px;
+  min-height: calc(100vh - 120px);
+  color: white;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Silkscreen', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 45px;
+  background: linear-gradient(to bottom, #344484 0%, #0e0e31 100%);
+  border-radius: 12px;
+}
+
+.card h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: start;
+  letter-spacing: 2px;
+  font-family: 'Silkscreen', monospace;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  margin-bottom: -60px;
+}
+
+.group p {
+  line-height: 1.6;
+  margin: 0 20px;
+  font-size: 24px;
+}
+
+.group1 {
+    margin-right: 200px;
+    margin-bottom: -80px;
+}
+
+.group1 img {
+  margin-right: 20px;
+}
+
+.group2 {
+  justify-content: center;
+  margin-left: 300px;
+}
+
+.group2 p {
+  text-align: end;
+}
+
+.group2 img {
+  margin-left: 20px;
+  margin-top: -50px;
+  margin-bottom: 60px;
+}
+
+.group3 {
+    margin-right: 150px;
+}
+
+.group3 img {
+  margin-right: 20px;
+}
+
+.group4 {
+  margin-right: 20px;
+  justify-content: center;
+}
+
+.group4 p {
+  text-align: end;
+  margin-left: 150px;
+}
+
+.group4 img {
+  margin-left: 20px;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.buttonContainer button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttonContainer button:hover {
+  transform: scale(1.05);
+}

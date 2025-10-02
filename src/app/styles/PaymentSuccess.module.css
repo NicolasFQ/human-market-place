@@ -1,0 +1,166 @@
+.successContainer {
+  background-color: #00001A;
+  min-height: 100vh;
+  padding: 4rem 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.successHeader {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+    align-items: center;
+}
+
+.horizontalLine{
+  border-top: 2px solid #3e3e68;
+  width: 90%;
+}
+
+.successHeader h1 {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.purchasedItemsSection {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.itemsTitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-family: 'Silkscreen', sans-serif;
+
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemCard {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+  border-bottom: 2px solid #2F2F52;
+  gap: 1rem;
+}
+
+.itemImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.itemInfo {
+  flex: 1;
+  display: flex;
+
+}
+
+.itemName {
+  font-size: 1.2rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.itemCreator {
+  font-size: 0.8rem;
+  color: #4ecdc4;
+  margin: 0;
+}
+
+.itemPrice {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-left: auto;
+}
+
+.orderTotalSection {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.totalLabel {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.totalValue {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #35F2DF;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.backHomeBtn {  
+  padding: 0.75rem 1.5rem .5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #35F2DF;
+  color: #000;
+  text-decoration: none;
+    font-family: 'Press Start 2P', system-ui;
+  transition: .3s ease;
+}
+
+.backHomeBtn:hover {
+  background-color: #7bfff2;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 2rem;
+}
+
+.emptyState p {
+  margin-bottom: 1rem;
+}
+
+.backHomeLink {
+  color: #4ecdc4;
+  text-decoration: none;
+}
+
+.backHomeLink:hover {
+  text-decoration: underline;
+}
+
+.loadingState {
+  text-align: center;
+  padding: 2rem;
+}
+
+.errorState {
+  text-align: center;
+  padding: 2rem;
+  color: #ff4444;
+}
+
+.errorText {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,37 @@
+{
+  "name": "humanexe-marketplace",
+  "version": "1.0.0",
+  "description": "A cyberpunk-themed marketplace built with Next.js 15",
+  "private": true,
+  "author": "HUMAN.EXE Team",
+  "license": "MIT",
+  "keywords": ["nextjs", "react", "marketplace", "cyberpunk", "ecommerce", "frontend"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NicolasFQ/human-market-place.git"
+  },
+  "homepage": "https://github.com/NicolasFQ/human-market-place#readme",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf .next out",
+    "preview": "next build && next start"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "next": "15.5.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "tailwindcss": "^4"
+  }
+}

@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #00e1ff;
+  --secondary-color: #00001A;
+  --vip-color: #ffd700;
+  --discount-color: #ff299c;
+  --background-color: #00001A;
+  --banner-bg-color: #44286b;
+  --banner-gradient-end: #6a0dad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}

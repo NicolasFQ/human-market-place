@@ -1,0 +1,210 @@
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/landingBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+}
+
+.containerBody{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 80vh;
+}
+
+
+.leftInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  flex: 1;
+  max-width: 50%;
+  margin: 3rem 3rem;
+}
+
+.leftInfo h1{
+  font-size: 5rem;
+  height: auto;
+  margin: 0;
+  line-height: 1.2;
+}
+
+
+.leftInfo h3{
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  margin-top: 2rem;
+  width: 90%;
+  font-weight: 200;
+  font-style: italic;
+}
+
+
+.lojabtn{
+  margin-top: 4rem;
+  width: 15rem;
+  align-self: flex-start;
+}
+
+
+.rightInfo{
+  position: relative;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.planInfo{
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  bottom: -10%;
+  right: 45%;
+  max-width: 400px;
+  height: 26%;
+}
+
+
+.planDesc{
+  font-size: 1.1rem;
+  font-weight: 200;
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+
+
+.planDesc span{
+  font-weight: 700;
+  font-style: italic;
+}
+
+.planPrice{
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+.planPrice span{
+  font-size: 1.1rem;
+  font-weight: 200;
+  margin-left: 5px;
+}
+
+.lojabtn .btn:hover{
+  transform: scale(1.1);
+  transition: .5s ease-in;
+}
+
+.planbtn{
+  position: absolute;
+  display: flex;
+  top: 80%;
+  left: -8%;
+  width: 400px;
+  height: 200px;
+  border-radius: 1000px;
+  z-index: 101;
+}
+
+
+.plan{
+  position: absolute;
+  top: 25%;
+  left: -8%;
+  width: 900px;
+  height: 900px;
+  z-index: 50;
+}
+
+
+.characters{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 900px;
+  height: 1000px;
+  z-index: 60;
+}
+
+
+.plan-info{
+  width: 85%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  left: 84rem;
+  top: 43.5rem;
+}
+
+@media (max-width: 1023px) {
+  .plan-info {
+    display: none;
+  }
+}
+
+.plan-desc{
+  font-size: 1.4rem;
+  font-weight: 200;
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+  .plan-desc {
+    font-size: 1.6rem;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .plan-desc {
+    width: 29%;
+  }
+}
+
+.plan-desc span{
+  font-weight: 700;
+  font-style: italic;
+}
+
+.plan-price{
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+  .plan-price {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .plan-price {
+    font-size: 2.2rem;
+  }
+}
+
+.plan-price span{
+  font-size: 1.4rem;
+  font-weight: 200;
+  margin-left: 5px;
+}

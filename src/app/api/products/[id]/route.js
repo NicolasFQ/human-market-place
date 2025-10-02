@@ -1,0 +1,101 @@
+import products from "../mock.json" assert { type: "json" };
+
+export async function GET(request, { params }) {
+
+  const productId = parseInt(params.id);
+
+  const allProducts = [
+    {
+      id: 1,
+      name: "Ana Lançador de Pulso - Especial Dia dos Namorados",
+      price: "R$ 29,99",
+      mainImage: "/images/ana_product_main.png",
+      thumbnailImages: [
+        "/images/ana_product_1.png",
+        "/images/ana_product_2.png",
+        "/images/ana_product_3.png",
+      ],
+      creator: "@user_1234",
+      profile: "/images/profile_1.png",
+      likes: 2.3,
+      vip: false,
+      discount: 0,
+      description: "Desenvolvido com design futurista e detalhes em rosa vibrante, o Ana Lançador de Pulso combina inovação e estilo em uma peça única. Seu acabamento branco com coração estampado simboliza afeto, enquanto o mecanismo de disparo garante praticidade e diversão.",
+    },
+    {
+      id: 2,
+      name: "Winny - Skin Cyberpunk",
+      price: "R$19,99",
+      mainImage: "/images/winny_product_main.png",
+      thumbnailImages: [
+        "/images/winny_product_1.png",
+        "/images/winny_product_2.png",
+        "/images/winny_product_3.png"
+      ],
+      creator: "@designer_456",
+      profile: "/images/profile_1.png",
+      likes: 3.1,
+      vip: true,
+      discount: 15,
+      description: "Criado com estética sombria e detalhes em roxo intenso, o Bracelete Tático Corrompido une tecnologia e mistério em um artefato exclusivo. Seu acabamento com circuitos energizados reflete a energia obscura, enquanto o design tático garante imponência e singularidade.",
+    },
+    {
+      id: 3,
+      name: "Nicolas Manopla de Propulsão - Deluxe",
+      price: "R$24,99",
+      mainImage: "/images/nicolas_product_main.png",
+      thumbnailImages: [
+        "/images/nicolas_product_1.png",
+        "/images/nicolas_product_2.png",
+        "/images/nicolas_product_3.png"
+      ],
+      creator: "@designer_456",
+      profile: "/images/profile_2.png",
+      likes: 3.1,
+      vip: false,
+      discount: 0,
+      description: "Desenvolvida com energia pulsante e detalhes em verde luminoso, a Manopla de Propulsão Deluxe combina força e estilo em uma peça única. Seu acabamento com cristais brilhantes transmite poder, enquanto o design aerodinâmico garante impacto visual e presença marcante.",
+    },
+    {
+      id: 4,
+      name: "Vitor Sniper de Precisão - Especial Halloween",
+      price: "R$9,99",
+      mainImage: "/images/vitor_product_main.png",
+      thumbnailImages: [
+        "/images/vitor_product_1.png",
+        "/images/vitor_product_2.png",
+        "/images/vitor_product_3.png"
+      ],
+      creator: "@designer_789",
+      profile: "/images/profile_3.png",
+      likes: 2.9,
+      vip: false,
+      discount: 0,
+      description: "Desenvolvida com energia pulsante e detalhes em verde luminoso, a Manopla de Propulsão Deluxe combina força e estilo em uma peça única. Seu acabamento com cristais brilhantes transmite poder, enquanto o design aerodinâmico garante impacto visual e presença marcante.",
+    },
+    {
+      id: 5,
+      name: "Yasmin Manipulador de Energia - Deluxe",
+      price: "R$24,99",
+      mainImage: "/images/yasmin_product_main.png",
+      thumbnailImages: [
+        "/images/yasmin_product_1.png",
+        "/images/yasmin_product_2.png",
+        "/images/yasmin_product_3.png"
+      ],
+      creator: "@user_1234",
+      profile: "/images/profile_3.png",
+      likes: 7.3,
+      vip: false,
+      discount: 10,
+      description: "Desenvolvida com energia pulsante e detalhes em verde luminoso, a Manopla de Propulsão Deluxe combina força e estilo em uma peça única. Seu acabamento com cristais brilhantes transmite poder, enquanto o design aerodinâmico garante impacto visual e presença marcante.",
+    }
+  ];
+
+  const product = products.find((item) => item.id === productId);
+
+  if (!product) {
+    return Response.json({ error: "Produto não encontrado" }, { status: 404 });
+  }
+  return Response.json(product);
+}

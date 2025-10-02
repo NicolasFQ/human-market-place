@@ -1,0 +1,46 @@
+.categorySection {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00001A;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.categoryItem {
+    text-align: center;
+    flex: 1; 
+    min-width: 120px;
+    max-width: 180px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.categoryItem:hover {
+    transform: scale(1.1);
+}
+
+.iconContainer {
+    width: 180px;
+    height: 120px; 
+    margin: 0 auto;
+    position: relative;
+}
+
+.categoryIcon {
+    object-fit: contain;
+}
+
+.categoryName {
+    font-family: "Press Start 2P", system-ui;
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.exclusivoName {
+    background: linear-gradient(90deg, #ff50df 8%, #9b19ff 47%, #62bcfd 76%);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
