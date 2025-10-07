@@ -126,8 +126,8 @@
 .plan{
   position: absolute;
   top: 25%;
-  left: -8%;
-  width: 900px;
+  left: -6%;
+  width: 1000px;
   height: 900px;
   z-index: 50;
 }
@@ -140,18 +140,6 @@
   width: 900px;
   height: 1000px;
   z-index: 60;
-}
-
-
-.plan-info{
-  width: 85%;
-  position: fixed;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  left: 84rem;
-  top: 43.5rem;
 }
 
 @media (max-width: 1023px) {
