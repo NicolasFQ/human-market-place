@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+/* Global styles for AI pages */
+html { 
+  scrollbar-width: thin; 
+  scrollbar-color: #5a5ad6 #101022; 
+}
+
+::-webkit-scrollbar { 
+  width: 10px; 
+  height: 10px; 
+}
+
+::-webkit-scrollbar-track { 
+  background: #101022; 
+  border-radius: 12px; 
+}
+
+::-webkit-scrollbar-thumb { 
+  background: linear-gradient(180deg, #6b61ff 0%, #3b3bb0 55%, #2d2d8a 100%); 
+  border-radius: 12px; 
+  border: 1px solid rgba(255,255,255,0.18); 
+}
+
+::-webkit-scrollbar-thumb:hover { 
+  background: linear-gradient(180deg, #7a72ff 0%, #4a49c2 55%, #3a3aa0 100%); 
+}
+
+/* Global keyframes */
+@keyframes blink { 
+  0%, 80%, 100% { 
+    opacity: .25; 
+    transform: translateY(0); 
+  } 
+  40% { 
+    opacity: 1; 
+    transform: translateY(-2px); 
+  } 
+}

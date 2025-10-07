@@ -78,7 +78,7 @@ export default function AIChatPage() {
         </div>
 
         <div className={styles.buttonContainer}>
-          <button>
+          <button onClick={() => router.push('/ai-character-selection')}>
             <Image
               src="/images/confirmbtn.png"
               alt="botão confirmar"
