@@ -28,13 +28,10 @@ export default function Intro() {
           </Link>
         </div>
         <div className={styles.rightInfo}>
-          <div className={styles.planInfo}>
-            <p className={`${styles.planDesc} ${inter.className}`}>Tenha acesso a descontos, conteúdo exclusivo e muito mais com nosso <span className={inter.className}>plano premium</span></p>
-            <p className={`${styles.planPrice} ${inter.className}`}>R$19,99<span className={inter.className}>p/mês</span></p>
-          </div>
-          <Link href="/plans" className={styles.planbtn}></Link>
-          <Image src="/images/planCard.png" className={styles.plan} alt='plano de dinheiro' width={1000} height={1000} />
-          <Image src="/images/characters.png" className={styles.characters} alt='personagens do jogo' width={1000} height={1000} />
+          <Link href="/plans">
+            <Image src="/images/planCard.png" className={styles.plan} alt='plano de dinheiro' width={1000} height={1000} />
+            <Image src="/images/characters.png" className={styles.characters} alt='personagens do jogo' width={1000} height={1000} />
+          </Link>
         </div>
       </div>
     </div>
