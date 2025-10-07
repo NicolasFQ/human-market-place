@@ -16,7 +16,7 @@ const inter = Inter({
 
 export default function Intro() {
   return (
-    <div className={styles.bg}>
+    <div className={`${styles.bg} landingPage`}>
       <div className={styles.containerBody}>
         <div className={styles.leftInfo}>
           <h1 className={pressStart2P.className}>a</h1>

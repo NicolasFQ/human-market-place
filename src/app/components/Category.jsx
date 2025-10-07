@@ -8,7 +8,7 @@ const Category = () => {
             <div className={styles.categoryItem}>
                 <div className={styles.iconContainer}>
                     <Image
-                        src="/images/eventos.png" 
+                        src="/images/Eventos.png" 
                         alt="Eventos"
                         fill
                         className={styles.categoryIcon}

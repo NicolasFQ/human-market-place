@@ -63,11 +63,9 @@ export default function PlansPage() {
         </div>
           <button className={styles.ctaButton}>SER EXCLUSIVO</button>
           <ul className={styles.featuresList}>
-            <li>IA Criadora de Produtos</li>
             <li>Descontos exclusivos em produtos premium</li>
             <li>Produtos e coleções limitadas antes de serem liberados no grátis</li>
             <li>Ferramenta de personalização avançada</li>
-            <li>Geração de itens personalizados</li>
           </ul>
         </div>
 
@@ -79,11 +77,11 @@ export default function PlansPage() {
           </div>
           <button className={styles.ctaButton}>SER EXCLUSIVO</button>
           <ul className={styles.featuresList}>
-            <li>IA Criadora de Produtos</li>
             <li>Descontos exclusivos em produtos premium</li>
             <li>Produtos e coleções limitadas antes de serem liberados no grátis</li>
             <li>Ferramenta de personalização avançada</li>
             <li>Geração de itens personalizados</li>
+            <li>IA Criadora de Produtos</li>
           </ul>
           <Image
             src="/images/Nicolas_icon.png"

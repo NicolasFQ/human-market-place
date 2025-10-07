@@ -21,3 +21,63 @@ body {
   font-weight: 400;
   line-height: 1.5;
 }
+
+/* Cyberpunk Stylized Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00001A;
+  border: 1px solid #1a1a2e;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00e1ff 0%, #35F2DF 50%, #00e1ff 100%);
+  border-radius: 6px;
+  border: 1px solid #00e1ff;
+  box-shadow: 
+    0 0 10px rgba(0, 225, 255, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #35F2DF 0%, #00e1ff 50%, #35F2DF 100%);
+  box-shadow: 
+    0 0 15px rgba(0, 225, 255, 0.5),
+    0 0 25px rgba(53, 242, 223, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(180deg, #00e1ff 0%, #35F2DF 100%);
+  box-shadow: 
+    0 0 20px rgba(0, 225, 255, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+::-webkit-scrollbar-corner {
+  background: #00001A;
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00e1ff #00001A;
+}
+
+/* Landing page - no scrollbar */
+.landingPage {
+  overflow: hidden !important;
+}
+
+.landingPage::-webkit-scrollbar {
+  display: none;
+}
+
+.landingPage * {
+  scrollbar-width: none;
+}
